@@ -1,0 +1,67 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.global-width {
+  width: 100%;
+}
+
+.global-height {
+  height: 100%;
+}
+
+.global-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.global-background {
+  background: linear-gradient(-45deg, #e9ce5d, #B7490F, #23a6d5, #1e528e);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.global-form-item-hide-footer {
+  margin-bottom: 0;
+}
+
+// 滚动条整体宽度
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+// 滚动条滑槽样式
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+// 滚动条样式
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(246, 202, 157, .7);
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgba(246, 202, 157, 0.8);
+}
+::-webkit-scrollbar-thumb:active{
+  background: rgba(246, 202, 157, .8);
+}
+// 浏览器失焦的样式
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(246, 202, 157, .7);
+}
